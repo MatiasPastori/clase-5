@@ -3,7 +3,13 @@ export default class Button {
         this.text = text;
     }
 
-    render() {
-        return `<button>${this.text}</button>`;
+    onClick() {
+        alert('You just clicked me! D:');
     }
+
+    render() {
+        return `<button id="my-button">${this.text}</button>`;
+    }
+
+
 }
